@@ -41,7 +41,11 @@ pip install -r requirements.txt
 for example (training, VGGNet-13, CIFAR10):
 ```sh
 $ cd CIFAR10
-$ python TWTA_3_3_CIFAR10_VGG13.py --resume False --learning_rate 0.001 --mode 'training'
+$ python TWTA_3_3_CIFAR10_VGG13.py --resume False --learning_rate 0.01 --mode 'training'
+```
+for CIFAR-10, after 200 epochs, please run it again with `resume=True` and `learning_rate=0.001` for another 200 epochs.
+```sh
+$ python TWTA_3_3_CIFAR10_VGG13.py --resume True --learning_rate 0.001 --mode 'training'
 ```
 ## ANN Inference
 ### **Run the code**:
