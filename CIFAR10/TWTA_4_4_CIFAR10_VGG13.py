@@ -48,7 +48,7 @@ parser = argparse.ArgumentParser()
 # resume from previous checkpoint after 100 epochs and decay learning rate by 10 times
 parser.add_argument('--resume', type=ast.literal_eval, default=False)
 # learning rate, # decay it by 10×  after 100 epochs, and set resume = True
-parser.add_argument('--learning_rate', type=float, default=0.001)
+parser.add_argument('--learning_rate', type=float, default=0.01)
 # training or inference
 parser.add_argument('--mode', type=str, default='training')
 args = parser.parse_args()
